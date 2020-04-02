@@ -14,9 +14,9 @@ defined( 'ABSPATH' ) or die( '¡Sin trampas!' );
 /* Enqueue admin styles */
 
 function jml_custom_admin_styles() {
-    wp_enqueue_style('custom-styles', plugins_url('/css/styles.css', __FILE__ ));
+    wp_enqueue_style('jmlPluginStylesheet', plugins_url('/css/styles.css', __FILE__ ));
 	}
-add_action('admin_enqueue_scripts', 'jml_custom_admin_styles');
+ add_action('admin_enqueue_scripts', 'jml_custom_admin_styles');  
 
 /* Remove columns to pages list */
 
